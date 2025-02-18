@@ -7,8 +7,8 @@ Student performance visualization
 
 """Installing the libraries necessary for the code"""
 
-pip install jupyter-dash streamlit pandas plotly dash
-
+import os
+os.system('python -m pip install jupyter-dash')
 import pandas as pd
 import dash
 from dash import dcc, html
@@ -135,7 +135,8 @@ def update_dashboard(selected_student):
 if __name__ == "__main__":
      app.run_server(debug=True)
 
-!pip install streamlit # Installing the streamlit library
+import os
+os.system('python -m pip install streamlit') # Installing the streamlit library
 
 import streamlit as st # Now you can import and use streamlit
 
