@@ -2,3 +2,4 @@ streamlit
 dash
 plotly
 pandas
+openpyxl
