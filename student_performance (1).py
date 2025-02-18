@@ -143,6 +143,9 @@ import streamlit as st # Now you can import and use streamlit
 # Create a Streamlit component to display the Dash app
 st.components.v1.iframe("http://localhost:8051", height=800)  # Adjust height as needed
 
-
+"scripts": {
+      "start": "streamlit run student_performance.py --server.enableCORS false --server.enableXsrfProtection false",
+      "prestart": "pip install -r requirements.txt"
+    }
 
 
