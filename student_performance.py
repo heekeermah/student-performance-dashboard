@@ -143,9 +143,23 @@ import streamlit as st # Now you can import and use streamlit
 # Create a Streamlit component to display the Dash app
 st.components.v1.iframe("http://localhost:8051", height=800)  # Adjust height as needed
 
-"scripts": {
+{
+    "name": "student-performance-dashboard",
+    "version": "1.0.0",
+    "description": "Student performance dashboard",
+    "author": "Your Name",
+    "main": "student_performance.py",
+    "scripts": {
       "start": "streamlit run student_performance.py --server.enableCORS false --server.enableXsrfProtection false",
       "prestart": "pip install -r requirements.txt"
+    },
+    "dependencies": {
+      "streamlit": "^1.21.0",
+      "dash": "^2.7.0",
+      "plotly": "^5.11.0",
+      "pandas": "^1.5.3",
+      "openpyxl": "^3.0.10"
     }
+}
 
 
